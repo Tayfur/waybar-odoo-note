@@ -15,7 +15,7 @@ A premium, Gruvbox-themed productivity suite for Hyprland users. Integrated dire
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/odoo-hypr-hub.git
+   git clone (https://github.com/Tayfur/waybar-odoo-note.git)
    cd odoo-hypr-hub
    ```
 
