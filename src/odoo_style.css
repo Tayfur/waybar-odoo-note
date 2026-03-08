@@ -1,0 +1,183 @@
+/*
+ * Odoo Workspace - Ultra Modern & Premium Gruvbox Theme
+ */
+
+ * {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 13px;
+    outline: none;
+}
+
+#MainWindow {
+    background-color: #1d2021; 
+    border-radius: 24px;
+    border: 1px solid rgba(131, 165, 152, 0.2);
+}
+
+/* --- HEADER --- */
+#HeaderBox {
+    background: linear-gradient(to bottom, #32302f, #282828);
+    padding: 15px 25px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    border-bottom: 1px solid #3c3836;
+}
+
+#HeaderTitle {
+    color: #ebdbb2;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+#HeaderIcon {
+    font-size: 18px;
+}
+
+#CloseBtn {
+    background: rgba(251, 73, 52, 0.1);
+    color: #fb4934;
+    border-radius: 50%;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 0;
+    font-size: 12px;
+}
+#CloseBtn:hover {
+    background: #fb4934;
+    color: #1d2021;
+}
+
+/* --- CARDS --- */
+#CardBox {
+    background-color: #282828;
+    border-radius: 20px;
+    padding: 22px;
+    border: 1px solid #3c3836;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+#SectionTitle {
+    color: #ebdbb2;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* --- SUMMARY --- */
+#SummaryCard {
+    background: linear-gradient(135deg, #32302f, #282828);
+    border-radius: 18px;
+    padding: 15px;
+    border: 1px solid #3c3836;
+}
+
+#SummaryLabel {
+    color: #a89984;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+#SummaryValue {
+    color: #fabd2f;
+    font-size: 24px;
+    font-weight: 900;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+}
+
+/* --- TRACKER --- */
+#TimerLabel {
+    color: #fabd2f;
+    font-size: 58px;
+    font-weight: 900;
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    margin: 10px 0;
+}
+
+entry, combobox {
+    background-color: #1d2021;
+    color: #ebdbb2;
+    border: 1px solid #504945;
+    border-radius: 12px;
+    padding: 8px 12px;
+}
+
+/* --- BUTTONS --- */
+#ActionBtn {
+    background: linear-gradient(to bottom, #b8bb26, #98971a);
+    color: #282828;
+    border-radius: 14px;
+    padding: 12px 24px;
+    font-weight: 900;
+}
+
+#ActionBtnDanger {
+    background: linear-gradient(to bottom, #fb4934, #cc241d);
+    color: #ebdbb2;
+    border-radius: 14px;
+    padding: 12px 24px;
+    font-weight: 900;
+}
+
+#CheckInBtn {
+    background-color: rgba(184, 187, 38, 0.1);
+    color: #b8bb26;
+    border: 1px solid #b8bb26;
+    border-radius: 14px;
+    padding: 15px;
+    font-weight: 800;
+}
+
+#CheckOutBtn {
+    background-color: rgba(211, 134, 155, 0.1);
+    color: #d3869b;
+    border: 1px solid #d3869b;
+    border-radius: 14px;
+    padding: 15px;
+    font-weight: 800;
+}
+
+/* --- HISTORY --- */
+#HistoryCardBox {
+    background-color: rgba(40, 40, 40, 0.5);
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #3c3836;
+}
+
+#HistoryListRow {
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: rgba(29, 32, 33, 0.6);
+    border-radius: 12px;
+    border-left: 4px solid #504945;
+}
+
+#HistoryTitle {
+    color: #ebdbb2;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+#HistorySubtitle {
+    color: #a89984;
+    font-size: 11px;
+}
+
+#HistoryValue {
+    color: #b8bb26;
+    font-weight: 900;
+}
+
+#HistorySectionTitle {
+    color: #83a598;
+    font-size: 13px;
+    font-weight: 800;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(131, 165, 152, 0.2);
+}

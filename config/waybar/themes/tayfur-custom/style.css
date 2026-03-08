@@ -1,0 +1,209 @@
+/* 
+ * TAYFUR'S CUSTOM GRUVBOX WAYBAR THEME
+ * Inspired by Gruvbox Dark Palette
+ */
+
+ * {
+    font-family: "Fira Sans Semibold", "Font Awesome 7 Free", "Font Awesome 7 Brands", "Font Awesome 6 Free", "Font Awesome 6 Brands", FontAwesome, "Material Icons", Roboto, Helvetica, Arial, sans-serif;
+    border: none;
+    border-radius: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+/* Gruvbox Tooltips */
+tooltip {
+    background-color: #282828;
+    border: 2px solid #504945;
+    border-radius: 12px;
+}
+tooltip label {
+    color: #ebdbb2;
+}
+
+/* -----------------------------------------------------
+ * MODULES CONTAINER
+ * ----------------------------------------------------- */
+
+#workspaces,
+#clock,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#tray,
+#custom-updates,
+#custom-exit,
+#custom-ml4w-welcome,
+#custom-notes,
+#custom-odoo,
+#custom-appmenu {
+    background-color: rgba(40, 40, 40, 0.95); /* Gruvbox BG (#282828) with slight transparency */
+    color: #ebdbb2; /* Gruvbox FG */
+    padding: 2px 14px;
+    margin: 4px 4px;
+    border-radius: 20px; /* Pill shape */
+    border: 2px solid #3c3836;
+    transition: all 0.3s ease;
+}
+
+#custom-appmenu:hover,
+#custom-ml4w-welcome:hover,
+#custom-notes:hover,
+#custom-odoo:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover,
+#clock:hover {
+    background-color: #504945; /* Lighter Gruvbox background on hover */
+    border-color: #fabd2f; /* Gruvbox Yellow border on hover */
+}
+
+/* -----------------------------------------------------
+ * INDIVIDUAL MODULE STYLING
+ * ----------------------------------------------------- */
+
+#custom-appmenu {
+    color: #fabd2f; /* Gruvbox Yellow */
+    font-size: 16px;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+
+#custom-notes {
+    color: #8ec07c; /* Gruvbox Aqua */
+    font-size: 18px;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+#custom-odoo {
+    color: #928374; /* Default Gray when off-duty */
+    font-size: 18px;
+    padding-right: 14px;
+    padding-left: 14px;
+}
+
+#custom-odoo.checked_in {
+    color: #b8bb26; /* Gruvbox Green when checked in */
+}
+
+#custom-odoo.running {
+    border-color: #fabd2f; /* Highlight border when a task is running */
+}
+
+#custom-ml4w-welcome {
+    margin-right: 8px;
+    background-image: url("../assets/ml4w-icon.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-right: 20px;
+}
+
+#custom-exit {
+    color: #fb4934; /* Gruvbox Red */
+    padding-right: 18px;
+    padding-left: 14px;
+}
+
+#custom-exit:hover {
+    background-color: #fb4934;
+    color: #282828;
+}
+
+/* WORKSPACES */
+#workspaces {
+    padding: 0px 4px;
+}
+
+#workspaces button {
+    padding: 0px 8px;
+    margin: 4px 2px;
+    border-radius: 14px;
+    color: #a89984; /* Disabled Gruvbox text */
+    background: transparent;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    color: #282828;
+    background: #8ec07c; /* Gruvbox Aqua/Green for active */
+    min-width: 35px;
+}
+
+#workspaces button:hover {
+    background: #504945;
+    color: #ebdbb2;
+}
+
+/* CLOCK */
+#clock {
+    color: #83a598; /* Gruvbox Blue */
+    font-size: 16px;
+}
+
+/* SYSTEM INFO */
+#pulseaudio {
+    color: #d3869b; /* Gruvbox Purple */
+}
+
+#pulseaudio.muted {
+    background-color: #fb4934;
+    color: #282828;
+}
+
+#network {
+    color: #fabd2f; /* Gruvbox Yellow */
+}
+
+#network.disconnected {
+    background-color: #fb4934;
+    color: #282828;
+}
+
+#bluetooth {
+    color: #83a598; /* Gruvbox Blue */
+}
+
+#battery {
+    color: #b8bb26; /* Gruvbox Green */
+}
+
+#battery.warning {
+    color: #fabd2f; /* Gruvbox Yellow */
+}
+
+#battery.critical:not(.charging) {
+    background-color: #fb4934;
+    color: #282828;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: rgba(40, 40, 40, 0.95);
+        color: #fb4934;
+    }
+}
+
+/* TRAY */
+#tray {
+    padding: 0px 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}

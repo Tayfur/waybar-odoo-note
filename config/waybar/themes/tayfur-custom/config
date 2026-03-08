@@ -1,0 +1,41 @@
+{
+    // General Settings
+    "layer": "top",
+    "margin-top": 8,
+    "margin-bottom": 0,
+    "margin-left": 12,
+    "margin-right": 12,
+    "spacing": 8,
+
+    // Load Default ML4W Modules Configuration
+    "include": [
+        "~/.config/ml4w/settings/waybar-quicklinks.json",
+        "~/.config/waybar/modules.json"
+    ],
+
+    // Modules Center
+    "modules-center": [
+        "custom/odoo",
+        "clock",
+        "custom/empty"
+    ],
+
+    // Modules Left
+    "modules-left": [
+        "custom/appmenu",
+        "custom/notes",
+        "hyprland/workspaces"
+    ],
+
+    // Modules Right    
+    "modules-right": [
+        "custom/updates",
+        "pulseaudio",
+        "network",
+        "bluetooth",
+        "battery",
+        "tray",
+        "custom/ml4w-welcome",
+        "custom/exit"
+    ]
+}
